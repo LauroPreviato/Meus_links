@@ -1,0 +1,35 @@
+body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(26, 25, 25);
+        
+}
+main{
+        width: 300px;
+        background-color: rgb(0, 0, 0);
+        margin: 10px 10px 10px 10px;
+        border-radius: 8px;
+        border-color: aliceblue;
+        padding: 10px;
+}
+.caixaprincipal{
+    margin-top: 8px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    border: 2px solid rgb(1, 226, 69);
+    height: 80px;
+    padding: 1px;
+
+}
+
+.nomelivro{
+    justify-content: left;
+    margin: -10px 40px 5px 15px;
+    color: white;
+    font-size: 13px;
+}
+.nomeautor{
+    margin: -10px 40px 5px 20px;
+    color: white;
+}

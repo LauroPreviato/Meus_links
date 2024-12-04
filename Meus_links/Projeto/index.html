@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="bloc1">
+            <div id="imgperf"><img src="imagens/WhatsApp Image 2024-12-02 at 18.33.02.jpeg" alt="Imagem de perfil"></div>
+            <div id="nome">
+                <h3>Lauro Previato   📪</h3>
+                <p>Desenvolvedor</p>
+            </div>
+            
+        </div>
+        <div id="bloc2">
+            <h4>Hard skills</h4>
+            <div id="html"><i class="fa-brands fa-html5"></i></div> <!--Apresenta por simbologia linguagens que programo-->
+            <div id="css"><i class="fa-brands fa-css3-alt"></i></div>
+            <div id="c"><i class="fa-solid fa-c"></i></div>
+            <div id="js"><i class="fa-brands fa-js"></i></div>
+            <div id="python"><i class="fa-brands fa-python"></i></div>
+        </div>
+        <div class="icones">
+            <div id="tiktok">
+                <a href="http://" class="linkredirecionado" target="_blank">
+
+                </a>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+
+            <div id="instagram">
+                <a href="https://instagram.com/lauro_previato" class="linkredirecionado " target="_blank">
+                    Connect with me on Instagram
+                </a>
+                <i class="fa-brands fa-instagram"></i>
+            </div> 
+
+            <div id="github">
+                <a href="https://github.com/LauroPreviato" class="linkredirecionado" target="_blank">
+                    Connect with me Github
+                </a>
+                <i class="fa-brands fa-github"></i>
+            </div> 
+
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/lauro-gabriel-previato-7a49a929a" class="linkredirecionado" target="_blank">
+                    Connect with me on LinkedIn
+                </a>
+                <i class="fa-brands fa-linkedin-in"></i> <!-- Font Awesome LinkedIn Icon -->
+            </div> 
+
+        </div>
+        <div id="livros">
+            <a href="livros.html" id="linklivros"><p>Minha lista de livros preferidos</p></a> <!-- Direciona o usuário á segunda pagina da interface com livros que eu gosto-->
+        
+        </div>
+        
+        <div id="playlist">
+            <a href="https://open.spotify.com/playlist/5A99W6zCrIvQpzlnehMeI8?si=UjwcCqDcTCScoXuZ5MiUOQ&pi=u-aIaVInB0SE2-" id="linkplaylist" target="_blank"><p>Playlist que mais escuto no spotyfi 🔥</p></a> <!-- Direciona o usuário a minha playlist no spotify-->
+        </div>
+    </main>
+
+    <script>
+        var book = document.getElementById('livros') /*Adiciona a DIV a variavel*/
+        book.addEventListener('mouseenter',entrar01)  /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar01"*/
+        book.addEventListener('mouseout', saiu01) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu01"*/
+        
+
+        function entrar01(){
+            book.style.backgroundColor='rgb(3, 150, 44)' /*Altera a cor de fundo*/
+        }
+        function saiu01(){
+            book.style.backgroundColor='rgb(1, 226, 69)' /*Retorna a cor de fundo original*/
+        }
+
+        var playlist = document.getElementById('playlist') /*Adiciona a DIV a variavel*/
+        playlist.addEventListener('mouseenter',entrar02) /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar02"*/
+        playlist.addEventListener('mouseout',saiu02) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu02"*/
+
+        function entrar02(){
+            playlist.style.backgroundColor='rgb(3, 150, 44)' /*Altera a cor de fundo*/
+        }
+        function saiu02(){
+            playlist.style.backgroundColor='rgb(1, 226, 69)' /*Retorna a cor de fundo original*/
+        }
+
+        var tiktok = document.getElementById('tiktok') /*Adiciona a DIV a variavel*/
+        tiktok.addEventListener('mouseenter',entrar03) /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar03"*/
+        tiktok.addEventListener('mouseout', saiu03) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu03"*/
+        function entrar03(){
+            tiktok.style.backgroundColor='rgb(1, 226, 69)' /*Altera a cor de fundo*/
+        }
+        function saiu03(){
+            tiktok.style.backgroundColor='rgb(31, 30, 30)' /*Retorna a cor de fundo original*/
+        }
+
+        var instagram = document.getElementById('instagram') /*Adiciona a DIV a variavel*/
+        instagram.addEventListener('mouseenter',entrar04) /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar04"*/
+        instagram.addEventListener('mouseout', saiu04) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu04"*/
+        function entrar04(){
+            instagram.style.backgroundColor='rgb(1, 226, 69)' /*Altera a cor de fundo*/
+        }
+        function saiu04(){
+            instagram.style.backgroundColor='rgb(31, 30, 30)' /*Retorna a cor de fundo original*/
+        }
+
+        var git = document.getElementById('github') /*Adiciona a DIV a variavel*/
+        git.addEventListener('mouseenter',entrar05) /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar05"*/
+        git.addEventListener('mouseout', saiu05) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu05"*/
+        function entrar05(){
+            git.style.backgroundColor='rgb(1, 226, 69)' /*Altera a cor de fundo*/
+        }
+        function saiu05(){
+            git.style.backgroundColor='rgb(31, 30, 30)' /*Retorna a cor de fundo original*/
+        }
+
+        var linkedin = document.getElementById('linkedin') /*Adiciona a DIV a variavel*/
+        linkedin.addEventListener('mouseenter',entrar06) /*Quando o cursor do mouse adentrar na DIV ativa a função "entrar06"*/
+        linkedin.addEventListener('mouseout', saiu06) /*Quando o cursor do mouse adentrar na DIV ativa a função "saiu06"*/
+        function entrar06(){
+            linkedin.style.backgroundColor='rgb(1, 226, 69)' /*Altera a cor de fundo*/
+        }
+        function saiu06(){
+            linkedin.style.backgroundColor='rgb(31, 30, 30) ' /*Retorna a cor de fundo original*/
+        }
+
+    </script>
+</body>
+</html>
